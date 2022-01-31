@@ -1,0 +1,7 @@
+D:\Desafios\C#\ProjetosPessoais\01-GoodBank\GoodBankAvancado\.vs\GoodBankAvancado\v16\GoodBankAvancado\GoodBankAvancado\bin\Debug\GoodBankAvancado.exe.config
+D:\Desafios\C#\ProjetosPessoais\01-GoodBank\GoodBankAvancado\.vs\GoodBankAvancado\v16\GoodBankAvancado\GoodBankAvancado\bin\Debug\GoodBankAvancado.exe
+D:\Desafios\C#\ProjetosPessoais\01-GoodBank\GoodBankAvancado\.vs\GoodBankAvancado\v16\GoodBankAvancado\GoodBankAvancado\bin\Debug\GoodBankAvancado.pdb
+D:\Desafios\C#\ProjetosPessoais\01-GoodBank\GoodBankAvancado\.vs\GoodBankAvancado\v16\GoodBankAvancado\GoodBankAvancado\obj\Debug\GoodBankAvancado.csproj.AssemblyReference.cache
+D:\Desafios\C#\ProjetosPessoais\01-GoodBank\GoodBankAvancado\.vs\GoodBankAvancado\v16\GoodBankAvancado\GoodBankAvancado\obj\Debug\GoodBankAvancado.csproj.CoreCompileInputs.cache
+D:\Desafios\C#\ProjetosPessoais\01-GoodBank\GoodBankAvancado\.vs\GoodBankAvancado\v16\GoodBankAvancado\GoodBankAvancado\obj\Debug\GoodBankAvancado.exe
+D:\Desafios\C#\ProjetosPessoais\01-GoodBank\GoodBankAvancado\.vs\GoodBankAvancado\v16\GoodBankAvancado\GoodBankAvancado\obj\Debug\GoodBankAvancado.pdb
