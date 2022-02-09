@@ -11,7 +11,7 @@ namespace GoodBankAvancado
     {
         static void Main(string[] args)
         {
-            Cliente cliente = new Cliente("399.800.288-07");
+            Cliente cliente = new Cliente("399.800.288-07", "Felipe Siqueira Carvalho Silva");
             ContaCorrente conta = new ContaCorrente();
 
             conta.Titular = cliente;
