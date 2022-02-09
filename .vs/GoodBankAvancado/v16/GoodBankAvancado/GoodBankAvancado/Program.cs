@@ -12,12 +12,13 @@ namespace GoodBankAvancado
         static void Main(string[] args)
         {
             Cliente cliente = new Cliente("399.800.288-07", "Felipe Siqueira Carvalho Silva");
-            ContaCorrente conta = new ContaCorrente();
+            ContaCorrente conta = new ContaCorrente(cliente);
 
-            conta.Titular = cliente;
-
-            Console.WriteLine(conta.Titular.CPF);
-            Console.WriteLine(cliente.CPF);
+            Console.WriteLine("Recuperando CPF pela conta corrente: " + conta.Titular.CPF);
+            Console.WriteLine();
+            Console.WriteLine("Recuperando CPF direto do cliente: " + cliente.CPF);
+            Console.WriteLine();
+            Console.WriteLine($"O cliente {conta.Titular.Nome} criou a conta corrente numero: {conta.Numero} na agencia: {conta.Agencia}.");
             Console.ReadLine();
         }
     }

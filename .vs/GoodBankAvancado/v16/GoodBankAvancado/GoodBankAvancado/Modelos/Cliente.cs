@@ -11,8 +11,11 @@ namespace GoodBankAvancado.Modelos
     /// </summary>
     public class Cliente
     {
-        public string Nome { get; set; }
-        public string CPF { get; private set; }
+        /// <summary>
+        /// Nome do Cliente
+        /// </summary>
+        public string Nome { get; set; }    //Acesso e alteração do nome é publico
+        public string CPF { get; private set; }     //Acesso publico, mas a alteração é privada
         public string Profissao { get; set; }
 
         /// <summary>
