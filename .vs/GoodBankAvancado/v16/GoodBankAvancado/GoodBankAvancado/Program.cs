@@ -11,14 +11,64 @@ namespace GoodBankAvancado
     {
         static void Main(string[] args)
         {
-            Cliente cliente = new Cliente("399.800.288-07", "Felipe Siqueira Carvalho Silva");
-            ContaCorrente conta = new ContaCorrente(cliente);
+            Console.WriteLine("Bem vindo ao GoodBank-Avançado");
+            Console.WriteLine();
 
-            Console.WriteLine("Recuperando CPF pela conta corrente: " + conta.Titular.CPF);
-            Console.WriteLine();
-            Console.WriteLine("Recuperando CPF direto do cliente: " + cliente.CPF);
-            Console.WriteLine();
-            Console.WriteLine($"O cliente {conta.Titular.Nome} criou a conta corrente numero: {conta.Numero} na agencia: {conta.Agencia}.");
+            Inicio:
+
+            if (ContaCorrente.TotalContasBanco > 0)
+            {
+                Console.WriteLine("O que o senhor(a) deseja fazer: 1-Criar uma nova conta, 2-Acessar sua conta ou qualquer outro numero para encerrar.");
+                Console.WriteLine();
+
+                try
+                {
+                    int a = Convert.ToInt32(Console.ReadLine());
+
+                    switch (a)
+                    {
+                        case 1:
+                            Console.WriteLine("Vamos criar sua conta corrente!");
+                            goto Fim;
+                        case 2:
+                            Console.WriteLine("Vamos acessar sua conta!");
+                            goto Fim;
+                    }
+                }
+                catch (FormatException e)
+                {
+                    Console.WriteLine(e.Message);
+                    Console.WriteLine("Ops... Você não digitou um numero, por favor tente novamente");
+                    goto Inicio;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Não há nenhuma conta corrente criada, escolha uma das opções:");
+                Console.WriteLine();
+                Console.WriteLine("Digite: 1-Criar Conta Corrente ou qualquer numero para fechar a aplicação");
+
+                try
+                {
+                    int a = Convert.ToInt32(Console.ReadLine());
+
+                    switch (a)
+                    {
+                        case 1:
+                            Console.WriteLine("Vamos criar sua conta corrente!");
+                            goto Fim;
+                    }
+                }
+                catch (FormatException e)
+                {
+                    Console.WriteLine(e.Message);
+                    Console.WriteLine("Ops... Você não digitou um numero, por favor tente novamente");
+                    goto Inicio;
+                }
+            }
+
+            Fim:
+            Console.WriteLine("Obrigado pela visita, aperte Enter para encerrar");
             Console.ReadLine();
         }
     }
